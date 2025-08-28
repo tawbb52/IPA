@@ -1,0 +1,12 @@
+على:
+  سير العمل_الإرسال:
+الوظائف:
+  استخدام_api:
+    يعمل على: ubuntu-latest
+    الأذونات:
+      القضايا: قراءة
+    خطوات:
+      - البيئة:
+          GH_TOKEN: ${{ Secrets.GITHUB_TOKEN }}
+        تشغيل: |
+          واجهة برمجة تطبيقات gh https://api.github.com/repos/octocat/Spoon-Knife/issues
